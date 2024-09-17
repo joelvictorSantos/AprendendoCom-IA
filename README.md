@@ -1,0 +1,5 @@
+Desenvolvi uma aplicação web como parte de um projeto universitário, com o objetivo de criar uma ferramenta inovadora para o ensino de programação, especialmente direcionada a estudantes de TI. A plataforma foi construída com base em uma análise aprofundada dos dados coletados, que permitiu identificar as principais dificuldades enfrentadas pelos alunos durante o processo de aprendizado.
+
+A aplicação oferece um conjunto de recursos pedagógicos e tutoriais explicativos, elaborados por especialistas em programação, que guiam os estudantes de forma clara e objetiva. Além disso, a plataforma disponibiliza materiais de apoio, como exercícios práticos e projetos, que auxiliam na fixação do conteúdo e no desenvolvimento de habilidades de programação.
+
+Através dessa ferramenta, os estudantes podem aprender no seu próprio ritmo e de acordo com suas necessidades individuais. A plataforma oferece um ambiente de aprendizado interativo e colaborativo, permitindo que os alunos tirem dúvidas, participem de fóruns e compartilhem conhecimentos com outros estudantes.
