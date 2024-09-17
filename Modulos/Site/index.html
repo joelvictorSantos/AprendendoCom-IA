@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnsinoProgramacao</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="menu-navegacao">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#" data-modal="modal-sobre">Sobre</a></li>
+                <li><a href="#" data-modal="modal-modulos">Módulos</a></li>
+                <li><a href="#" data-modal="modal-contato">Contato</a></li>
+                <a href="#" id="toggle-theme">
+                    <i class="theme-icon"></i>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="modal" id="modal-sobre">
+        <span class="modal-close">&times;</span>
+        <h4> O projeto visa criar um guia completo e abrangente para auxiliar alunos de TI a aprender programação de forma autônoma, utilizando as potencialidades da inteligência artificial. A proposta é oferecer um conjunto de módulos flexíveis, com conteúdos teóricos e práticos, que abrandem desde conceitos básicos de IA até aplicações mais avançadas em diversas áreas da programação. 
+        </h4>
+    </div>
+    <div class="modal" id="modal-modulos">
+        <span class="modal-close">&times;</span>
+        <h3>
+           Abaixo os módulos para acessar os contêudos:
+        </h3>
+          <ul>
+            <h4>
+                <p><a href="/Modulos/modulo-1/index.html">Módulo 1: Introdução e Fundamentos
+                </a></p>
+                <p><a href="/Modulos/modulo-2/index.html">Módulo 2: Desenvolvimento de Aplicações Básicas
+                </a></p>
+                <p><a href="/Modulos/modulo-3/index.html">Módulo 3: Programação Orientada a Objetos
+                </a></p>
+        </h4>
+          </ul>
+        </p>
+      </div>
+    <div class="modal" id="modal-contato">
+        <span class="modal-close">&times;</span>
+        <h3>
+            Entre em contato conosco caso tenha alguma dúvida:
+         </h3>
+         <ul>
+            <h4>
+            <li>@gmail.com</li>
+        </ul>
+            <ul>
+                <h4>
+            <li>@gmail.com</li>
+        </ul>
+            <ul>
+                <h4>
+            <li>@gmail.com</li>
+        </h4>
+          </ul>
+    </div>
+
+    <div class="overlay"></div>
+    <main>
+        <h1>
+            <span class="line1">Um Guia de estudo de programação com</span>
+            <span class="line2">inteligência artificial</span>
+          </h1>
+          <h2>
+            Conceitos Básicos de Programação
+          </h2>
+         
+        <div class="container-info">
+            <!-- O conteúdo gerado pelo JavaScript aparecerá aqui -->
+             
+        </div>
+        <div class="texto-centralizado">
+            <a href="https://chat.openai.com/">chatgpt</a>
+            <div class="image-panel">
+                <img src="img/chatgpt.png">
+                 </div>
+            <a href="https://www.blackbox.ai/">blackbox</a>
+            <div class="image-panel">
+                <img src="img/blackbox.png">
+                 </div> 
+            <a href="https://copilot.microsoft.com/">copilot</a>
+            <div class="image-panel">
+                <img src="img/copilot.png">
+                 </div>  
+            <a href="https://www.perplexity.ai/">perplexity</a>
+            <div class="image-panel">
+                <img src="img/perplexity.png">
+                 </div> 
+                 <p>Essas ferramentas desempenharão o papel de um professor virtual para o aluno, onde quaisquer dúvidas ou perguntas podem ser direcionadas a elas. O objetivo é fornecer um suporte educacional abrangente durante sua jornada de estudos em programação. Ao mencionar outras IA, como BackBox, Copilot e Perplexity AI, buscamos oferecer uma visão mais ampla das opções disponíveis, permitindo que você escolha a ferramenta que melhor se adapte às suas necessidades. Agora que o acesso foi realizado, podemos dar início ao guia de estudo, começando com a primeira etapa, introdução e fundamentos.
+                </p>
+                <p>Agora clique no bloco azul para explorar nossa estrutura de módulos e iniciar seus estudos:</p>
+        </div> 
+        
+    </main>
+   
+    <div class="accordion"></div>
+        <div class="accordion-item">
+            <input type="checkbox" id="mods">
+            <label for="mods">Módulos: Guia do autoaprendizagem de programação</label>
+            
+            <div class="content">
+                <p><a href="/Modulos/modulo-1/index.html" target="_blank">Módulo 1: Introdução e Fundamentos
+                </a></p>
+                <p><a href="/Modulos/modulo-2/index.html" target="_blank">Módulo 2: Desenvolvimento de Aplicações Básicas
+                </a></p>
+                <p><a href="/Modulos/modulo-3/index.html" target="_blank">Módulo 3: Programação Orientada a Objetos
+                </a></p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-links">
+              <a href="https://github.com/joelvictorSantos" target="_blank"><img src="img/icons8-github(1).svg" alt="icone github"></a>
+              <a href="https://www.linkedin.com/in/joel-victor-brand%C3%A3o-dos-santos-188ab7272/" target="_blank"><img src="img/icons8-linkedin(1).svg" alt="icone linkedin"></a>
+            </div>
+            <div class="container-paragrafos">
+       
+              <p>2024 - Ensino Programação. Todos os direitos reservados.</p> 
+            </div>
+          </footer>
+    <script src="transition.js"></script>
+    <script src="modal.js"></script>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+);
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-size: cover;
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #1a385a;
+    font-weight: bold;
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 25px;
+    height: 25px;
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 0.3rem; /* Reduzi o espaçamento abaixo dos itens */ 
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+h1 {
+    font-size: 2rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.3rem; /* Espaçamento entre letras */
+    margin: 0.1rem 0; /* Reduzi a margem superior/inferior dos títulos */
+    padding: 1rem;
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+.image-panel {
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo da imagem principal */
+}
+
+.image-panel img {
+    max-width: 60%;  /* Faz a imagem ocupar no máximo 100% da largura do container */
+    height: auto;     /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    border: 2px solid white; /* Adiciona uma borda branca ao redor da imagem */
+}
+
+h1 .line1, h1 .line2 {
+    display: block; /* Garante que cada linha ocupe um bloco separado */    
+}
+
+h2{
+    font-size: 1.2rem;
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
+    margin: 0.2rem 0; /* Reduzi a margem superior/inferior dos títulos */
+   
+}
+
+h3{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
+    margin: 0.2rem 0; /* Reduzi a margem superior/inferior dos títulos */
+    padding: 1rem;
+}
+h4{
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
+    margin: 0.2rem 0; /* Reduzi a margem superior/inferior dos títulos */
+    margin-top: 10px;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    letter-spacing: 0.3rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.texto-centralizado {
+    font-size: 1rem;
+    max-width: 70%;
+    margin: 0 auto;
+    letter-spacing: 0.4rem;
+    text-align: justify;
+}
+
+.texto-centralizado a {
+    letter-spacing: 0.2rem;
+    position: relative;
+    left: 25px; /* Move a letra 10 pixels para a direita */
+}
+
+.dark-mode .texto-centralizado a{
+    background-color: #333;
+    color: white;
+}
+/* Estilos para o menu de navegação horizontal */
+.menu-navegacao {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Coloca os itens um ao lado do outro */
+    justify-content: center; /* Centraliza os itens no meio */
+    flex-wrap: wrap;
+}
+
+.menu-navegacao li {
+    margin: 0 18px; /* Espaço entre os itens */
+}
+
+.menu-navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: bold;
+    display: flex; /* Torna os itens do menu flexíveis */
+    margin-block-start: 15px; /* Espaço entre o menu e o ícone */
+}
+
+.menu-navegacao i {
+    padding: 0px;
+}
+/* Estilo para as seções do site */
+section {
+    padding: 60px 20px;
+}
+
+#inicio {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#sobre, #modulos, #contato {
+    background-color: #ddd;
+}
+.theme-icon {
+    
+    width: 28px;
+    height: 28px;
+    background-image: url('img/moon.png'); /* Ícone Lua */
+    background-size: cover;
+    transition: background-image 0.3s ease;
+    margin-left: 20px; /* Espaço entre o menu e o ícone */
+    display: flex; /* Torna os itens do menu flexíveis */
+
+}
+
+body.dark-mode .theme-icon {
+    background-image: url('img/sun.png'); /* Ícone Sol quando em modo escuro */
+    
+}
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+/* Impede que o corpo role quando o modal está ativo */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Estilo para o modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    display: none; /* Ocultar por padrão */
+    width: 60%;
+    
+}
+
+/* Exibe o modal */
+.modal-show {
+    display: block;
+
+}
+.dark-mode .modal {
+    background-color: #333;
+    color: white;
+}
+/* Estilo para a overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none; /* Ocultar por padrão */
+}
+
+.overlay-show {
+    display: block;
+}
+
+  /* Aplicação do Dropdowns*/
+  .accordion {
+    width: 60%;
+    margin: 8px auto;
+}
+
+.accordion-item input[type="checkbox"] {
+    display: none;
+}
+.accordion-item label {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    padding: 15px;
+    background-color: #1a385a;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 50%; /* Define a largura máxima do texto */
+    margin: 0 auto; /* Cria margens automáticas para centralizar verticalmente */
+    transition: background-color 0.3s ease;
+}
+
+.accordion-item input[type="checkbox"]:checked + label {
+    background-color: #1a385a;
+}
+
+.accordion-item .content {
+    max-width: 50%; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Cria margens automáticas para centralizar verticalmente */
+    max-height: 0;
+    padding: 0 15px;
+    background-color: #f9f9f9; 
+    width: 50rem; /* Largura dos inputs */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2px solid #1a385a;; /* Adiciona uma borda branca ao redor da imagem */
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+}
+
+.accordion-item input[type="checkbox"]:checked ~ .content {
+    max-height: 300px;
+    padding: 15px;
+}
+
+.content p {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 auto; /* Cria margens automáticas para centralizar verticalmente */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    width: 50rem; /* Largura dos inputs */
+    padding: 1rem; /* Espaçamento interno */
+    
+}
+
+a {
+    color: black;
+    margin: 0.1rem 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(185deg, rgba(64, 64, 83, 0.5), rgba(46, 46, 50, 0.5));
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    font-weight: bold;
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    margin: 1rem 0; /* Reduzi a margem superior/inferior dos títulos */
+}
+
+  footer {
+    display: flex;
+    padding-inline: 50px;
+    height: 50px;
+  }
+  
+  footer p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .container-links {
+    align-self: center;
+  }
+  
+  .container-paragrafos {
+    text-align: center;
+    align-self: center;
+    flex: 0.9;
+  }
